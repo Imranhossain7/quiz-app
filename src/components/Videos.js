@@ -11,7 +11,6 @@ export default function Videos() {
       <Video />
       <Video />
       <Video />
-      <Video />
     </div>
   );
 }
