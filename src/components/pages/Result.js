@@ -7,7 +7,9 @@ import Summary from "../Summary";
 export default function Result() {
   const { id } = useParams();
   // const { navigate } = useNavigate();
-  const { state } = useLocation();
+  const location = useLocation();
+  console.log(location);
+  const state = location.state;
   console.log(state);
   const { qna } = state;
 

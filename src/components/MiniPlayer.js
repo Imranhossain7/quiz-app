@@ -36,10 +36,12 @@ export default function MiniPlayer({ title, id }) {
       <ReactPlayer
         className={classes.player}
         url={videoUrl}
+        key={videoUrl}
         width="300px"
         height="168px"
         playing={status}
         controls
+        origin="http://localhost:3000"
       />
       <p>{title}</p>
     </div>
